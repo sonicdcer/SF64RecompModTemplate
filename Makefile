@@ -20,8 +20,8 @@ CFLAGS   := -target mips -mips2 -mabi=32 -O2 -G0 -mno-abicalls -mno-odd-spreg -m
 			-fomit-frame-pointer -ffast-math -fno-unsafe-math-optimizations -fno-builtin-memset \
 			-Wall -Wextra -Wno-incompatible-library-redeclaration -Wno-unused-parameter -Wno-unknown-pragmas -Wno-unused-variable \
 			-Wno-missing-braces -Wno-unsupported-floating-point-opt -Werror=section
-CPPFLAGS := -nostdinc -D_LANGUAGE_C -DMIPS -DGBI_DOWHILE -DF3DEX_GBI -DF3D_OLD -DTARGET_N64 -I include \
-			-I mk64/include -I mk64/src -I mk64/include/libc
+CPPFLAGS := -nostdinc -D_LANGUAGE_C -DMIPS -DGBI_DOWHILE -DF3DEX_GBI -DTARGET_N64 -I include \
+			-I sf64/include -I sf64/src -I sf64/include/libc -I sf64/include/libultra
 LDFLAGS  := -nostdlib -T $(LDSCRIPT) -Map $(BUILD_DIR)/mod.map --unresolved-symbols=ignore-all --emit-relocs -e 0 --no-nmagic
 
 C_SRCS := $(wildcard src/*.c)

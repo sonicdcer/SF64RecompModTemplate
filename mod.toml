@@ -1,11 +1,11 @@
-# Config file for an example MK64: Recompiled mod.
+# Config file for an example SF64: Recompiled mod.
 
 # Fields that end up in the mod's manifest.
 [manifest]
 
 # Unique ID of this mod. Pick something long enough that it'll never be the same as any other mod.
 # The name displayed in the mod management menu is separate from this so this doesn't need to be human readable.
-id = "mk64_recomp_mod_template"
+id = "sf64_recomp_mod_template"
 
 # Version of this mod.
 version = "1.0.0"
@@ -15,23 +15,23 @@ display_name = "Mod Example"
 
 # The description that will show up when this mod is displayed in the mod menu. This should be human readable.
 description =  """
-This is an example mod for MK64: Recompiled that can be used as a template for creating mods. \
-When this mod is enabled, you will always jump very high.
+This is an example mod for Starfox 64: Recompiled that can be used as a template for creating mods. \
+When this mod is enabled, you will always have infinite bombs and twin laser.
 
-For more details, see https://github.com/sonicdcer/MK64RecompModTemplate."""
+For more details, see https://github.com/sonicdcer/SF64RecompModTemplate."""
 
 # A short description that will show up in this mod's entry in the mod list. This should be human readable and kept short
 # to prevent it from being cut off due to the limited space.
-short_description = "Mod example that lets you jump very high."
+short_description = "Mod example that lets you have infinite bombs and twin laser."
 
 # Authors of this mod.
 authors = [ "Your name here" ]
 
 # ID of the target recomp game.
-game_id = "mk64"
+game_id = "sf64"
 
-# Minimum version of the target recomp (e.g. MK64: Recompiled) that this mod can run on.
-minimum_recomp_version = "0.0.9"
+# Minimum version of the target recomp (e.g. Starfox 64: Recompiled) that this mod can run on.
+minimum_recomp_version = "1.0.0"
 
 # Dependency mods. Each entry is the mod's ID and then an optional minimum version of the dependency mod.
 dependencies = [
@@ -52,11 +52,11 @@ native_libraries = [
 elf_path = "build/mod.elf"
 
 # Output mod filename.
-mod_filename = "mk64_recomp_mod_template"
+mod_filename = "sf64_recomp_mod_template"
 
 # Reference symbol files.
-func_reference_syms_file = "MarioKart64RecompSyms/mk64.us.syms.toml"
-data_reference_syms_files = [ "MarioKart64RecompSyms/mk64.us.datasyms.toml" ]
+func_reference_syms_file = "Starfox64RecompSyms/sf64.us.rev1.syms.toml"
+data_reference_syms_files = [ "Starfox64RecompSyms/sf64.us.rev1.datasyms.toml" ]
 
 # Additional files to include in the mod.
 additional_files = [ ]

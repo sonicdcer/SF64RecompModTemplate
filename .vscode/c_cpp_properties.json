@@ -4,8 +4,8 @@
             "name": "Mod",
             "includePath": [
                 "${workspaceFolder}/include",
-                "${workspaceFolder}/mk64/include",
-                "${workspaceFolder}/mk64/src"
+                "${workspaceFolder}/sf64/include",
+                "${workspaceFolder}/sf64/src"
             ],
             "defines": [
                 "F3DEX_GBI",
