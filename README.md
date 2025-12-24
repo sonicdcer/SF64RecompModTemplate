@@ -30,10 +30,10 @@ To update the commit of the decompilation that you're targeting, follow these st
 * Build the [N64Recomp](https://github.com/N64Recomp/N64Recomp) repo and copy the N64Recomp executable to the root of this repository.
 * Make sure you pass `KEEP_MDEBUG=1` to `make` when building the decomp in order to keep debug information. This must be done from a clean build if you have built the decomp already without `KEEP_MDEBUG=1`.
 * Build the version of the Starfox 64 decompilation that you want to update to and copy the resulting .elf file to the root of this repository.
-* Update the `mk64` submodule in your clone of this repo to point to the commit you built in the previous step.
+* Update the `sf64` submodule in your clone of this repo to point to the commit you built in the previous step.
 * Run `N64Recomp generate_symbols.toml --dump-context`
-* Rename `dump.toml` and `data_dump.toml` to `mk64.us.rev1.syms.toml` and `mk64.us.rev1.datasyms.toml` respectively.
-  * Place both files in the `MarioKart64RecompSyms` folder.
+* Rename `dump.toml` and `data_dump.toml` to `sf64.us.rev1.syms.toml` and `sf64.us.rev1.datasyms.toml` respectively.
+  * Place both files in the `Starfox64RecompSyms` folder.
 * Try building.
   * If it succeeds, you're done.
   * If it fails due to a missing header, create an empty header file in the `include/dummy_headers` folder, with the same path.
